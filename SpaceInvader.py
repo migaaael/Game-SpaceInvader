@@ -54,17 +54,8 @@ bala_y = 525
 bala_y_mov = 0.8
 bala_visible = False
 
-
-# Función para hacerlo un IDE
-def fuente_bytes(fuent):
-    with open(fuent, 'rb') as f:
-        ttf_bytes = f.read()
-    return io.BytesIO(ttf_bytes)
-
-
 # Puntaje
 puntaje = 0
-fuente_como_bytes = fuente_bytes('fastest.ttf')
 fuente = pygame.font.Font('fastest.ttf', 22)
 texto_x = 10
 texto_y = 10
